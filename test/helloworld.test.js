@@ -17,6 +17,9 @@ describe('{unit}: Testing helloWorld', () => {
   it('should return correct greeting in Chinese', () => {
     expect(helloWorld('Chinese')).to.equal('你好，世界');
   });
+  it('should return correct greeting in Turkish', () => {
+    expect(helloWorld('Turkish')).to.equal('Merhaba Dünya');
+  });
   it('should default to English', () => {
     expect(helloWorld()).to.equal('Hello World');
   });
