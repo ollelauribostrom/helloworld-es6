@@ -1,8 +1,8 @@
 # helloworld-es6 [![npm version](https://badge.fury.io/js/helloworld-es6.svg)](https://www.npmjs.com/package/helloworld-es6)
 
 This is a simple example module that returns a "Hello world" greeting in 6 different
-languages. To be used as a boilerplate for quickly getting started with developing a
-node package/cli using ES6 & babel.
+languages. To be used as a example/boilerplate for quickly getting started with developing
+a node package/cli using ES6 & babel.
 
 > English, Spanish, French, Swedish, Chinese, Turkish
 
@@ -36,8 +36,9 @@ Use as boilerplate
 
 ```sh
 # clone it
-git clone git@github.com:ollelauribostrom/helloworld-es6.git
-cd helloworld-es6
+mkdir my-awsome-package
+cd my-awsome-package
+git clone git@github.com:ollelauribostrom/helloworld-es6.git .
 
 # Make it your own
 rm -rf .git && git init && npm init
