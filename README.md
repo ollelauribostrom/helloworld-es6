@@ -21,6 +21,7 @@ import helloWorld from 'helloworld-es6';
 console.log(helloWorld()); // => "Hello world"
 console.log(helloWorld('Swedish')); // => "Hej Världen"
 console.log(helloWorld('french')); // => "Bonjour le monde"
+console.log(helloWorld('Parseltongue')); // => "Sorry, I don´t know how to say "Hello World" in Parseltongue yet." 
 
 ```
 

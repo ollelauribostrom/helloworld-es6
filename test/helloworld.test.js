@@ -29,4 +29,7 @@ describe('{unit}: Testing helloWorld', () => {
   it('should throw a TypeError if argument is not a string', () => {
     expect(() => helloWorld({})).to.throw(TypeError);
   });
+  it('should handle handle unknown languages by returning message', () => {
+    expect(helloWorld('Parseltongue')).to.equal('Sorry, I don´t know how to say "Hello World" in Parseltongue yet.');
+  });
 });
