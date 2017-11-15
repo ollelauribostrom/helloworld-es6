@@ -2,9 +2,10 @@
 
 import commander from 'commander';
 import helloWorld from '../helloworld';
+import { version } from '../../package.json';
 
 commander
-  .version('1.0.0')
+  .version(version)
   .option('-l, --language [language]', 'language of greeting')
   .parse(process.argv);
 
