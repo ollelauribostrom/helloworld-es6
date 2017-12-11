@@ -9,8 +9,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.3",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "eslint": "^4.13.0",
@@ -20,6 +19,9 @@
     "eslint-plugin-react": "^7.5.1",
     "mocha": "^4.0.1",
     "nyc": "^11.4.0"
+  },
+  "engines": {
+    "node": ">=8.9.1"
   },
   "nyc": {
     "report-dir": "test/coverage",
@@ -33,9 +35,9 @@
     "start": "babel src -D -d dist --watch",
     "build": "babel src -D -d dist",
     "prepublish": "npm run build",
-    "test": "mocha --timeout 10000 --compilers js:babel-register",
-    "coverage": "nyc --temp-directory ./test/coverage/tmp mocha --timeout 10000 --compilers js:babel-register",
-    "coveralls": "nyc report --temp-directory ./test/coverage/tmp mocha --timeout 10000 --compilers js:babel-register --reporter=text-lcov | coveralls",
+    "test": "mocha --timeout 10000 --require babel-core/register",
+    "coverage": "nyc --temp-directory ./test/coverage/tmp mocha --timeout 10000 --require babel-core/register",
+    "coveralls": "nyc report --temp-directory ./test/coverage/tmp mocha --timeout 10000 --require babel-core/register --reporter=text-lcov | coveralls",
     "lint": "eslint src test --ignore-pattern test/coverage*"
   },
   "author": "Olle Lauri Boström <ollebostr@gmail.com> (https://github.com/ollelauribostrom)",
