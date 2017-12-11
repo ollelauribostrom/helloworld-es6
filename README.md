@@ -1,4 +1,5 @@
 # helloworld-es6 
+[![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/helloworld-es6/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/helloworld-es6?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/ollelauribostrom/helloworld-es6/badge.svg)](https://snyk.io/test/github/ollelauribostrom/helloworld-es6) [![npm version](https://badge.fury.io/js/helloworld-es6.svg)](https://www.npmjs.com/package/helloworld-es6)
 
 This is a simple example module that returns a "Hello world" greeting in 6 different
