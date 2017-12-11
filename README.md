@@ -50,7 +50,7 @@ rm -rf .git && git init && npm init
 npm install
 
 # Start babel file watch
-npm run dev
+npm start
 ```
 
 
