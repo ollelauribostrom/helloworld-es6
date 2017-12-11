@@ -55,10 +55,11 @@ npm run dev
 
 
 #### Available commands
-- `npm run dev`: Start babel file watch
+- `npm start`: Start babel file watch
 - `npm run build`: Build to /dist folder
 - `npm test`: Run tests
 - `npm run coverage`: Run test coverage using nyc, outputs report to /test/coverage
+- `npm run coveralls`: Run test coverage using nyc & send report to coveralls (must have specified repo_token in .coveralls.yml)
 - `npm run lint`: Run eslint
 
 

@@ -30,12 +30,12 @@
     ]
   },
   "scripts": {
-    "dev": "babel src -D -d dist --watch",
+    "start": "babel src -D -d dist --watch",
     "build": "babel src -D -d dist",
     "prepublish": "npm run build",
     "test": "mocha --timeout 10000 --compilers js:babel-register",
     "coverage": "nyc --temp-directory ./test/coverage/tmp mocha --timeout 10000 --compilers js:babel-register",
-    "coverall": "nyc report --temp-directory ./test/coverage/tmp mocha --timeout 10000 --compilers js:babel-register --reporter=text-lcov | coveralls",
+    "coveralls": "nyc report --temp-directory ./test/coverage/tmp mocha --timeout 10000 --compilers js:babel-register --reporter=text-lcov | coveralls",
     "lint": "eslint src test --ignore-pattern test/coverage*"
   },
   "author": "Olle Lauri Boström <ollebostr@gmail.com> (https://github.com/ollelauribostrom)",
