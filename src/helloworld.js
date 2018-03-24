@@ -1,4 +1,4 @@
-import greetings from './lib/greetings.json';
+import greetings from './data/greetings.json';
 
 function getUnknownLanguageMessage(language) {
   return `Sorry, I don´t know how to say "Hello World" in ${language} yet.`;
